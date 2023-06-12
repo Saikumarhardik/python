@@ -7,7 +7,11 @@ li = []
 with open("saikumar.txt","r") as r:
   lines = r.readlines()
   y = lines[2].split(',')
-  print(y)
+  for x in y:
+    li.append(x.strip())
+print(li)
+    
+  
   
    
   
