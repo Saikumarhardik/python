@@ -7,7 +7,7 @@ li = []
 with open("saikumar.txt","r") as r:
   lines = r.readlines()
   for x in lines[2]:
-    li.append(x.strip())
+    li.append(x.split())
 print(li)
     
    
