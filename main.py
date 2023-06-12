@@ -1,5 +1,9 @@
 import os 
 
-curr_direc = os.getcwd()
+import psutil
 
-print("your current working direc is:", curr_direc)  
+x = psutil.cpu_percent(10)
+
+
+
+print("your current cpu percent is :", x)  
