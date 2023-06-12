@@ -5,7 +5,9 @@ os.system("top -bn 1 > saikumar.txt")
 with open("saikumar.txt","r") as r:
   lines = r.readlines()
   for x in lines[2]:
-    print(x)
+    y = x.strip().split(',')
+    print(y)
+    
    
   
     
