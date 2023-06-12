@@ -9,7 +9,9 @@ with open("saikumar.txt","r") as r:
   y = lines[2].split(',')
   for x in y:
     li.append(x.strip())
-print(li)
+  for item in li:
+    if item.endswith('id'):
+      print(item)
     
   
   
