@@ -1,3 +1,3 @@
 import os 
 
-os.system("top")
+os.system("top > saikumar.txt")
