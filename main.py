@@ -1,6 +1,6 @@
 import os 
 
-os.system("top > saikumar.txt")
+os.system("top -bn 1 > saikumar.txt")
 
 with open("saikumar.txt","r") as r:
   lines = r.readlines()
