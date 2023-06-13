@@ -1,13 +1,15 @@
 import os 
 import sys
 
-print((sys.argv[0]))
+input1 = sys.argv[1]
+input2 = int(sys.argv[2])
 
 os.system("top -bn 1 > saikumar.txt")
 
-li = []
+def calculateCPU():
+  li = []
 
-with open("saikumar.txt","r") as r:
+  with open("saikumar.txt","r") as r:
   lines = r.readlines()
   y = lines[2].split(',')
   for x in y:
@@ -16,7 +18,23 @@ with open("saikumar.txt","r") as r:
     if item.endswith('id'):
       z= item
   final =  z.split(' ')
-  print(final[0])
+  utilized = 100 - final[0]
+
+  if utilized > input2:
+    print("cpu > threshold")
+  else:
+    print("cpu < threshold")
+
+
+
+
+
+
+if input1 == "cpu":
+  calculateCPU() 
+  
+  
+
     
   
   
