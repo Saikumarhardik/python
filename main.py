@@ -13,7 +13,7 @@ def calculateCPU():
     lines = r.readlines()
     y = lines[2].split(',')
     for x in y:
-    li.append(x.strip())
+      li.append(x.strip())
     for item in li:
       if item.endswith('id'):
         z= item
