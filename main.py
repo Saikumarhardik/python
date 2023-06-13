@@ -1,4 +1,7 @@
 import os 
+import sys
+
+print(len(sys.argv))
 
 os.system("top -bn 1 > saikumar.txt")
 
