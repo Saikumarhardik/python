@@ -10,20 +10,23 @@ def calculateCPU():
   li = []
 
   with open("saikumar.txt","r") as r:
-  lines = r.readlines()
-  y = lines[2].split(',')
-  for x in y:
+    lines = r.readlines()
+    y = lines[2].split(',')
+    for x in y:
     li.append(x.strip())
-  for item in li:
-    if item.endswith('id'):
-      z= item
-  final =  z.split(' ')
-  utilized = 100 - final[0]
+    for item in li:
+      if item.endswith('id'):
+        z= item
+    final =  z.split(' ')
+    utilized = 100 - final[0]
 
-  if utilized > input2:
-    print("cpu > threshold")
-  else:
-    print("cpu < threshold")
+    if utilized > input2:
+      print("cpu > threshold")
+    else:
+      print("cpu < threshold")
+  
+  
+  
 
 
 
