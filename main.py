@@ -18,7 +18,7 @@ def calculateCPU():
       if item.endswith('id'):
         z= item
     final =  z.split(' ')
-    utilized = 100 - final[0]
+    utilized = 100 - int(final[0])
 
     if utilized > input2:
       print("cpu > threshold")
