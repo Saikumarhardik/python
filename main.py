@@ -11,7 +11,9 @@ with open("saikumar.txt","r") as r:
     li.append(x.strip())
   for item in li:
     if item.endswith('id'):
-      print(item)
+      z= item
+ final =  z.split(' ')
+ print(final[0])
     
   
   
